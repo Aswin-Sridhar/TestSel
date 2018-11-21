@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class App {
 
-	//public static void main(String[] args) throws AWTException, MalformedURLException {
+	public static void main(String[] args) throws AWTException, MalformedURLException {
 	   
 		//System.setProperty("webdriver.chrome.driver", "/Users/aswin/Documents/Eclipse_Workspace/demo/chromedriver");
 		
@@ -22,7 +22,7 @@ public class App {
 //	        WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 	
 	
-	public static void test() throws AWTException, MalformedURLException {
+	//public static void test() throws AWTException, MalformedURLException {
 	
 //	System.setProperty("webdriver.chrome.driver", "/Users/aswin/Desktop/chromedriver");
 //		ChromeDriver driver = new ChromeDriver();
