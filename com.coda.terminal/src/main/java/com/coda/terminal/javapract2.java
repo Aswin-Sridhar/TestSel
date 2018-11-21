@@ -31,7 +31,7 @@ public class javapract2 {
 			
 			driver.quit();
 			
-			App.test();
+			
 			
 	}
 
