@@ -1,3 +1,4 @@
 FROM maven:3.6.0-jdk-8
+ADD . .
 WORKDIR com.coda.terminal/src/main/java/com/coda/terminal/
 CMD ["mvn", "exec:java","-Dexec.mainClass=com.coda.terminal.javapract2"]
