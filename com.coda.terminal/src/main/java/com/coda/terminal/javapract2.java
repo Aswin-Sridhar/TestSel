@@ -16,9 +16,9 @@ public class javapract2 {
 //		caps.setCapability("platform", "Windows 8");
 //		caps.setCapability("version", "67.0");
 		
-		//URL local = new URL("http://localhost:4444/wd/hub");//this will also work
+		URL local = new URL("http://172.17.0.2:4444/wd/hub");for local docker 
 		
-		URL local = new URL("http://127.0.0.1:4444/wd/hub");// http://127.0.0.1:4444/wd/hub for aws jenkins IP
+		//URL local = new URL("http://127.0.0.1:4444/wd/hub");// http://127.0.0.1:4444/wd/hub for aws jenkins IP
 		 WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 			
 			
