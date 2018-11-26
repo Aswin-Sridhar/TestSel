@@ -18,7 +18,7 @@ public class javapract2 {
 		
 		//URL local = new URL("http://localhost:4444/wd/hub");//this will also work
 		
-		URL local = new URL("http://172.17.0.2:4444/wd/hub");
+		URL local = new URL("http://http://54.187.105.230:4444/wd/hub");//http://54.187.105.230 for aws jenkins IP
 		 WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 			
 			
