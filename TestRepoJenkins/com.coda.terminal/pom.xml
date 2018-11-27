@@ -42,7 +42,7 @@
                     <version>1.6.0</version>
                     <configuration>
                         <classpathScope>test</classpathScope>
-                        <mainClass>com.coda.terminal.javapract2</mainClass>
+                        <mainClass>javapract2</mainClass>
                     </configuration>
                     <executions>
                         <execution>
@@ -59,14 +59,7 @@
                 <source>1.6</source>
                 <target>1.6</target>
         </configuration>
-			    <configuration>
-      <executable>java</executable>
-      <includeProjectDependencies>true</includeProjectDependencies>
-      <includePluginDependencies>true</includePluginDependencies>
-      <classpathScope>compile</classpathScope>
-      <mainClass>${storm.topology}</mainClass>
-    </configuration>
-			    
+			      
      </plugin>
             </plugins>
         </build>
