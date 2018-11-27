@@ -1,6 +1,6 @@
 FROM maven:3.6.0-jdk-8
 WORKDIR java
-ADD src/ /java
+ADD ./ /java
 RUN mvn -version
 RUN mvn clean
 CMD ["mvn", "exec:java","-Dexec.mainClass=com.coda.terminal.javapract2"]
