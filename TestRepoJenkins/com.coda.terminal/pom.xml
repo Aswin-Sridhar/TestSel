@@ -42,7 +42,7 @@
                     <version>1.6.0</version>
                     <configuration>
                       
-                        <mainClass>coda.terminal.javapract2</mainClass>
+                        <mainClass>javapract2</mainClass>
                     </configuration>
                     <executions>
                         <execution>
