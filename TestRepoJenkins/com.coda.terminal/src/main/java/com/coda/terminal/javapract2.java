@@ -12,7 +12,7 @@ public class javapract2 {
 
 	public static void main(String[] args) throws AWTException, MalformedURLException{
 
-		system.out.println("Successfully started executing the script")
+		System.out.println("Successfully started executing the script");
 		//URL local = new URL("http://172.17.0.2:4444/wd/hub");//for local docker 
 		
 		URL local = new URL("http://127.0.0.1:4444/wd/hub");// http://127.0.0.1:4444/wd/hub for aws jenkins IP
