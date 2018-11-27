@@ -3,5 +3,4 @@ ADD . .
 RUN mvn -version
 RUN mvn clean
 ENTRYPOINT ["./src/main/java/com/coda/terminal/javapract2"]
-RUN ["chmod", "+x", "./src/main/java/com/coda/terminal/javapract2"]
 CMD ["mvn", "exec:java","-Dexec.mainClass=com.coda.terminal.javapract2"]
