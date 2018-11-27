@@ -2,5 +2,5 @@ FROM maven:3.6.0-jdk-8
 ADD . .
 RUN mvn -version
 RUN mvn clean
-ENTRYPOINT ["./src/"]
+ENTRYPOINT ["./src/main/java/com/coda/terminal/"]
 CMD ["mvn", "exec:java","-Dexec.mainClass=com.coda.terminal.javapract2"]
