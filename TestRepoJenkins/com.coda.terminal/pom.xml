@@ -41,8 +41,8 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>1.6.0</version>
                     <configuration>
-                        <classpathScope>test</classpathScope>
-                        <mainClass>javapract2</mainClass>
+                      
+                        <mainClass>coda.terminal.javapract2</mainClass>
                     </configuration>
                     <executions>
                         <execution>
