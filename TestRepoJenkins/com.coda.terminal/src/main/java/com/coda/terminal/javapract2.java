@@ -8,9 +8,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
+
 public class javapract2 {
 
 	public static void main(String[] args) throws AWTException, MalformedURLException{
+		
+		
+		report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
+		test = report.startTest("ExtentDemo");
 
 		System.out.println("Successfully started executing the script");
 		//URL local = new URL("http://172.17.0.2:4444/wd/hub");//for local docker 
@@ -27,7 +34,21 @@ public class javapract2 {
 			
 			driver.get("https://www.irctc.co.in/eticketing/userSignUp.jsf");
 			
-			System.out.println("Script passed : " +  driver.getTitle());
+			String TitleName = driver.getTitle();
+			
+			if(driver.getTitle().contains("IRCTC"))
+			{
+				test.log(LogStatus.PASS, "Navigated to "+ TitleName);
+				}
+				else
+				{
+				test.log(LogStatus.FAIL, "Test Failed");
+				}
+			
+			report.endTest(test);
+			report.flush();
+			
+			System.out.println("Script passed: " +TitleName+ " launched successfully" );	
 			
 			driver.quit();
 			
