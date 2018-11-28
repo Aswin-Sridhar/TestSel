@@ -22,10 +22,7 @@ public class App {
 //	        WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 	
 	
-	//public static void test() throws AWTException, MalformedURLException {
 	
-//	System.setProperty("webdriver.chrome.driver", "/Users/aswin/Desktop/chromedriver");
-//		ChromeDriver driver = new ChromeDriver();
 		URL local = new URL("http://172.17.0.2:4444/wd/hub");
         WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 		
