@@ -17,23 +17,26 @@ public class javapract2 {
 		System.out.println("Successfully started executing the script");
 		//URL local = new URL("http://172.17.0.2:4444/wd/hub");//for local docker 
 		
-		URL local = new URL("localhost:4444/wd/hub");// http://127.0.0.1:4444/wd/hub for aws jenkins IP
+		//URL local = new URL("localhost:4444/wd/hub");// http://127.0.0.1:4444/wd/hub for aws jenkins IP
 		
 		//URL local = new URL("http://172.17.0.3:4444/wd/hub");
 
-		 WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
+		 //WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome()); commented
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
       chromeOptions.setBinary("/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary");
       chromeOptions.addArguments("--headless");
+		
+		WebDriver Driver = new ChromeDriver(chromeOptions);
+	      Driver.navigate().to("http://127.0.0.1:4444/wd/hub");
 			
 			
 			
 			//driver.manage().window().maximize();
 			
-			driver.get("https://www.irctc.co.in/eticketing/userSignUp.jsf");
+			Driver.get("https://www.irctc.co.in/eticketing/userSignUp.jsf");
 			
-			String TitleName = driver.getTitle();
+			String TitleName = Driver.getTitle();
 			
 // 			if(driver.getTitle().contains("IRCTC"))
 // 			{
@@ -49,7 +52,7 @@ public class javapract2 {
 			
 			System.out.println("Script passed: " +TitleName+ " launched successfully" );	
 			
-			driver.quit();
+			Driver.quit();
 			
 			
 			
