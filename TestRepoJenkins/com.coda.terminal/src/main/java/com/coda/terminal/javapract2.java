@@ -9,6 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class javapract2 {
@@ -16,8 +17,8 @@ public class javapract2 {
 	public static void main(String[] args) throws AWTException, MalformedURLException{
 		
 		
-		report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
-		test = report.startTest("ExtentDemo");
+		ExtentReports report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
+		ExtentTest test = report.startTest("ExtentDemo");
 
 		System.out.println("Successfully started executing the script");
 		//URL local = new URL("http://172.17.0.2:4444/wd/hub");//for local docker 
