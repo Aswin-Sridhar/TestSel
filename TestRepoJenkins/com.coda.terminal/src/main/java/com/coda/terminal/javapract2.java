@@ -17,8 +17,8 @@ public class javapract2 {
 	public static void main(String[] args) throws AWTException, MalformedURLException{
 		
 		
-		ExtentReports report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
-		ExtentTest test = report.startTest("ExtentDemo");
+		//ExtentReports report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
+		//ExtentTest test = report.startTest("ExtentDemo");
 
 		System.out.println("Successfully started executing the script");
 		//URL local = new URL("http://172.17.0.2:4444/wd/hub");//for local docker 
@@ -37,17 +37,17 @@ public class javapract2 {
 			
 			String TitleName = driver.getTitle();
 			
-			if(driver.getTitle().contains("IRCTC"))
-			{
-				test.log(LogStatus.PASS, "Navigated to "+ TitleName);
-				}
-				else
-				{
-				test.log(LogStatus.FAIL, "Test Failed");
-				}
+// 			if(driver.getTitle().contains("IRCTC"))
+// 			{
+// 				test.log(LogStatus.PASS, "Navigated to "+ TitleName);
+// 				}
+// 				else
+// 				{
+// 				test.log(LogStatus.FAIL, "Test Failed");
+// 				}
 			
-			report.endTest(test);
-			report.flush();
+			//report.endTest(test);
+			//report.flush();
 			
 			System.out.println("Script passed: " +TitleName+ " launched successfully" );	
 			
