@@ -2,4 +2,5 @@ FROM maven:3.6.0-jdk-8
 RUN mvn -version
 ADD . .
 RUN mvn package
-CMD ["mvn", "exec:java"]
+RUN mkdir /outputs
+CMD ["mvn","exec:java"]
