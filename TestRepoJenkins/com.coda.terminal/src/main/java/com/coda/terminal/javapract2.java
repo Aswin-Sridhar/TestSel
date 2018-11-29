@@ -7,6 +7,7 @@ import java.net.URL;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class javapract2 {
 
@@ -21,6 +22,10 @@ public class javapract2 {
 		//URL local = new URL("http://172.17.0.3:4444/wd/hub");
 
 		 WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
+		
+		ChromeOptions chromeOptions = new ChromeOptions();
+      chromeOptions.setBinary("/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary");
+      chromeOptions.addArguments("--headless");
 			
 			
 			
