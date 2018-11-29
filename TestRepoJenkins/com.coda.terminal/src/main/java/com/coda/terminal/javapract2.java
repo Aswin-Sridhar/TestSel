@@ -37,17 +37,17 @@ public class javapract2 {
 			
 			String TitleName = driver.getTitle();
 			
-			if(driver.getTitle().contains("IRCTC"))
-			{
-				test.log(LogStatus.PASS, "Navigated to "+ TitleName);
-				}
-				else
-				{
-				test.log(LogStatus.FAIL, "Test Failed");
-				}
+// 			if(driver.getTitle().contains("IRCTC"))
+// 			{
+// 				test.log(LogStatus.PASS, "Navigated to "+ TitleName);
+// 				}
+// 				else
+// 				{
+// 				test.log(LogStatus.FAIL, "Test Failed");
+// 				}
 			
-			report.endTest(test);
-			report.flush();
+			//report.endTest(test);
+			//report.flush();
 			
 			System.out.println("Script passed: " +TitleName+ " launched successfully" );	
 			
