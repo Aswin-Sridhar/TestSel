@@ -21,7 +21,7 @@ public class AddReportDocker {
 		
 		System.out.println("Script started executing");
 		
-		ExtentHtmlReporter html = new ExtentHtmlReporter("./reports/result.html");
+		ExtentHtmlReporter html = new ExtentHtmlReporter("/reports/result.html");
 		html.setAppendExisting(true);
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(html);
