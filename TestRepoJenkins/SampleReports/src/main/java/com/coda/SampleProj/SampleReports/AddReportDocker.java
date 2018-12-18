@@ -21,14 +21,14 @@ public class AddReportDocker {
 		
 		System.out.println("Script started executing");
 		
-		ExtentHtmlReporter html = new ExtentHtmlReporter("./reports/result.html");
+		ExtentHtmlReporter html = new ExtentHtmlReporter("/reports/result.html");
 		html.setAppendExisting(true);
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(html);
 		ExtentTest test = extent.createTest("IRCTC", "Launch IRCTC website");
 		
 		
-			URL local = new URL("http://192.168.100.51:4444/wd/hub");
+			URL local = new URL("http://abcd:4444/wd/hub");
 			WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 		
 		//System.setProperty("webdriver.chrome.driver","/Users/aswin/Desktop/chromedriver");
