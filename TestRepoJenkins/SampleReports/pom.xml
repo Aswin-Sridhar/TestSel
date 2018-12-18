@@ -88,8 +88,8 @@
 				<version>3.0.0-M2</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
+                        <suiteXmlFile>${xml}</suiteXmlFile>
+                    </suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
