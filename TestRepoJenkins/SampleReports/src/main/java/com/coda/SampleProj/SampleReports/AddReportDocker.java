@@ -28,7 +28,7 @@ public class AddReportDocker {
 		ExtentTest test = extent.createTest("IRCTC", "Launch IRCTC website");
 		
 		
-			URL local = new URL("http://testswarm:4444/wd/hub");//changing abcd to testswarm for swarm experiment
+			URL local = new URL("http://54.187.105.230:4444/wd/hub");//changing abcd to http://54.187.105.230 for swarm experiment
 			WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 		
 		//System.setProperty("webdriver.chrome.driver","/Users/aswin/Desktop/chromedriver");
