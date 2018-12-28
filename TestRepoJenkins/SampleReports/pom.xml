@@ -88,7 +88,7 @@
 				<version>3.0.0-M2</version>
 				<configuration>
 					<suiteXmlFiles>
-                        <suiteXmlFile>parallel.xml</suiteXmlFile>
+                        <suiteXmlFile>${xml}</suiteXmlFile>
                     </suiteXmlFiles>
 				</configuration>
 			</plugin>
