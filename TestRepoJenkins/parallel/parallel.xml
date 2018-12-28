@@ -4,8 +4,8 @@
   <test name="Test" parallel="true" thread-count="2">
    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.coda.SampleProj.SampleReports.SampleClassOne"/>
-      <class name="com.coda.SampleProj.SampleReports.SampleClassTwo"/>
+      <class name="com.coda.Parallel.parallel.SampleClassOne"/>
+      <class name="com.coda.Parallel.parallel.SampleClassTwo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
