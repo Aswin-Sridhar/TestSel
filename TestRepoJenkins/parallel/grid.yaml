@@ -102,3 +102,21 @@ services:
         condition: none
       placement:
         constraints: [node.role == worker]
+  maven:
+    image: 'testone'
+    networks:
+      - main
+    depends_on:
+      - hub
+    deploy:
+      mode: replicated
+      replicas: 1
+      labels:
+        selenium.grid.type: "node"
+        selenium.grid.node: "true"
+        selenium.grid.node.type: "maven"
+      restart_policy:
+        condition: none
+      placement:
+        constraints: [node.role == manager]
+
