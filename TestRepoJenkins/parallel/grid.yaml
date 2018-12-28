@@ -103,7 +103,7 @@ services:
       placement:
         constraints: [node.role == worker]
   maven:
-    image: 'selenium-swarm-java'
+    image: 'testone'
     networks:
       - main
     depends_on:
