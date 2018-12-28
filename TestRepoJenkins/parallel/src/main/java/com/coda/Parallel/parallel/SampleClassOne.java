@@ -30,7 +30,7 @@ public class SampleClassOne {
 		extent.attachReporter(html);
 		ExtentTest test = extent.createTest("IRCTC", "Launch IRCTC website");
 
-		URL local = new URL("http://localhost:4444/wd/hub");
+		URL local = new URL("http://54.187.105.230:4444/wd/hub");
 		WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
