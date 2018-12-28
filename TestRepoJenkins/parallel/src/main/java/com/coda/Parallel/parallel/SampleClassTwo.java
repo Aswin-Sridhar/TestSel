@@ -28,7 +28,7 @@ public class SampleClassTwo {
 		ExtentTest test = extent.createTest("Redbus", "Launch Redbus website");
 
 
-		URL local = new URL("http://tangoCharlie_chrome:4444/wd/hub");
+		URL local = new URL("http://localhost:4444/wd/hub");
 		WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 
 		//		System.setProperty("webdriver.chrome.driver","/Users/aswin/Desktop/chromedriver");
