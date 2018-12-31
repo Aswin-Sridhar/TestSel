@@ -21,7 +21,7 @@ services:
       placement:
         constraints: [node.role == manager]
   chrome:
-    image: selenium/node-chrome:2.53.0
+    image: selenium/node-chrome
     entrypoint: >
       bash -c '
         export IP_ADDRESS=$$(ip addr show eth0 | grep "inet\b" | awk '"'"'{print $$2}'"'"' | awk -F/ '"'"'{print $$1}'"'"' | head -1) &&
