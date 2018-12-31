@@ -51,7 +51,7 @@ services:
     networks:
       - main
     depends_on:
-      - hub
+      - chrome
     deploy:
       mode: replicated
       replicas: 1
