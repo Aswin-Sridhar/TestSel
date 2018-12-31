@@ -50,6 +50,7 @@ services:
     image: 'tested'
     networks:
       - main
+    dns: 8.8.8.8
     depends_on:
       - chrome
     deploy:
