@@ -103,7 +103,7 @@ services:
       placement:
         constraints: [node.role == worker]
   maven:
-    image: 'testtwo'
+    image: 'tester'
     networks:
       - main
     depends_on:
