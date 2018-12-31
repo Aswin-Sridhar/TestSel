@@ -46,62 +46,6 @@ services:
         condition: none
       placement:
         constraints: [node.role == manager]
-  firefox:
-    image: selenium/node-firefox
-    entrypoint: >
-      bash -c '
-        export IP_ADDRESS=$$HOSTNAME &&
-        SE_OPTS="-host $$IP_ADDRESS" /opt/bin/entry_point.sh'
-    volumes:
-      - /dev/shm:/dev/shm
-      - /dev/urandom:/dev/random
-    environment:
-      HUB_PORT_4444_TCP_ADDR: hub
-      HUB_PORT_4444_TCP_PORT: 4444
-      NODE_MAX_SESSION: 1
-    networks:
-      - main
-    depends_on:
-      - hub
-    deploy:
-      mode: replicated
-      replicas: 5
-      labels:
-        selenium.grid.type: "node"
-        selenium.grid.node: "true"
-        selenium.grid.node.type: "firefox"
-      restart_policy:
-        condition: none
-      placement:
-        constraints: [node.role == manager]
-  firefoxBuddy:
-    image: selenium/node-firefox
-    entrypoint: >
-      bash -c '
-        export IP_ADDRESS=$$HOSTNAME &&
-        SE_OPTS="-host $$IP_ADDRESS" /opt/bin/entry_point.sh'
-    volumes:
-      - /dev/shm:/dev/shm
-      - /dev/urandom:/dev/random
-    environment:
-      HUB_PORT_4444_TCP_ADDR: hub
-      HUB_PORT_4444_TCP_PORT: 4444
-      NODE_MAX_SESSION: 1
-    networks:
-      - main
-    depends_on:
-      - hub
-    deploy:
-      mode: replicated
-      replicas: 4
-      labels:
-        selenium.grid.type: "node"
-        selenium.grid.node: "true"
-        selenium.grid.node.type: "wefirefox"
-      restart_policy:
-        condition: none
-      placement:
-        constraints: [node.role == worker]
   maven:
     image: 'selenium-swarm-java'
     networks:
