@@ -47,7 +47,7 @@ services:
       placement:
         constraints: [node.role == manager]
   maven:
-    image: 'tester'
+    image: 'tested'
     networks:
       - main
     depends_on:
