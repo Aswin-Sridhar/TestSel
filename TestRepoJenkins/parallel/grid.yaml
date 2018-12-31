@@ -48,7 +48,6 @@ services:
         constraints: [node.role == manager]
   maven:
     image: 'tester'
-    container_name: my-web-container
     networks:
       - main
     depends_on:
