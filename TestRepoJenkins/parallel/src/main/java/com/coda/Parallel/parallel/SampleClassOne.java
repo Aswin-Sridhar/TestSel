@@ -34,12 +34,12 @@ public class SampleClassOne {
 		WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://www.amazon.in/");
+		driver.get("https://www.irctc.co.in/eticketing/userSignUp.jsf");
 		Thread.sleep(10000);
 		//driver.findElement("userRegistrationForm:userName").sendKeys("test bro");
 		//driver.findElement(By.id("userRegistrationForm:userName")).sendKeys("test bro");
-		System.out.println("Amazon launched successfully");
-		test.pass("Amazon launched successfully", MediaEntityBuilder.createScreenCaptureFromPath("./../snaps/img9.png").build());
+		System.out.println("IRCTC launched successfully");
+		test.pass("IRCTC launched successfully", MediaEntityBuilder.createScreenCaptureFromPath("./../snaps/img9.png").build());
 		extent.flush();
 
 		driver.quit();
