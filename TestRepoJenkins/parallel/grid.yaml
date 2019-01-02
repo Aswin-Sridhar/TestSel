@@ -64,4 +64,6 @@ services:
         condition: none
       placement:
         constraints: [node.role == manager]
+    volumes:
+      $(pwd):/reports
 
