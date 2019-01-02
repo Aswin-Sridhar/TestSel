@@ -65,5 +65,5 @@ services:
       placement:
         constraints: [node.role == manager]
     volumes:
-      ${pwd}:/reports
+      - /var/lib/jenkins/workspace/qa_cloud_par/TestRepoJenkins/parallel/reports:/reports
 
