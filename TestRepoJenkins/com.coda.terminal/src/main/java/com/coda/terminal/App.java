@@ -47,6 +47,4 @@ public class App {
 //		rb.keyRelease(KeyEvent.VK_SPACE);
 //		rb.keyRelease(KeyEvent.VK_ALT);
 	}
-
-//		driver.quit();
 }
